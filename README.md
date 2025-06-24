@@ -59,3 +59,5 @@ Para este projeto em específico atuaremos na criação de um website conforme i
 @diego_ifsp
 @rafael_ifsp
 @bianca_ifsp
+
+# IFSP GRU @2025
