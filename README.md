@@ -48,6 +48,8 @@ O projeto focará na integração de conhecimentos de front-end e no processamen
 ## Apresentação do Projeto
 Para este projeto em específico atuaremos na criação de um website conforme instruções do professor para um comércio de um Restaurante Local com o nome "Restaurante É de Casa", localizado na cidade de Guarulhos - SP. 
 
+![image](https://github.com/user-attachments/assets/1b6874dc-38a8-445c-8d17-51a7b6d4d35f)
+
 
 ## Ferramentas Utilizadas
 [![Tecnologias e Ferramentas utilizadas:](https://skillicons.dev/icons?i=figma,vscode,html,css,js,php,bootstrap,github,git,)](https://skillicons.dev)
