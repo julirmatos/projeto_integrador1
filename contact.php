@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante É de Casa</title>
+    <link rel="icon" href="img/restaurante_projeto.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Cabeçalho: Apresentação -->
+    <header>
+        <h1>Restaurante É de Casa</h1>
+        <p>Comida caseira de qualidade, feita com carinho em Guarulhos - SP</p>
+    </header>
+
+    <!-- Nossa História -->
+    <section id="historia">
+        <h2>Nossa História</h2>
+        <p>Fundado no coração de Guarulhos, o É de Casa nasceu para oferecer pratos que lembram o sabor da comida da
+            vovó. Nossa missão é servir refeições frescas, com ingredientes selecionados e um atendimento acolhedor.</p>
+    </section>
+
+    <!-- Cardápio -->
+    <section id="cardapio">
+        <h2>Nosso Cardápio</h2>
+        <div class="prato">
+            <img src="img/virado.jpg" alt="Segunda" />
+            <h3>Segunda</h3>
+            <p>Virado à Paulista.</p>
+        </div>
+        <div class="prato">
+            <img src="img/bife_role.jpg" alt="Terça" />
+            <h3>Terça</h3>
+            <p>Bife à rolê.</p>
+        </div>
+        <!-- Adicione mais pratos conforme desejar -->
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+        <form id="contactForm" action="contact.php" method="POST">
+            <input type="text" name="nome" placeholder="Seu Nome" required />
+            <input type="email" name="email" placeholder="Seu Email" required />
+            <input type="tel" name="telefone" placeholder="Seu Telefone" required />
+            <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+        <div id="formMessage"></div>
+        <address>
+            <p>Endereço: Rua Endres, 1008, Guarulhos - SP</p>
+            <p>Telefone: (11) 2422-5412</p>
+            <p>Email: restauranteedecasa@gmail.com</p>
+            <p>
+                <a href="https://www.instagram.com/edecasarestaurantes/" target="_blank">Instagram</a> |
+                <a href="https://www.facebook.com/people/Restaurante-%C3%89-de-casa/61550549802375/"
+                    target="_blank">Facebook</a>
+            </p>
+        </address>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
