@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante é de Casa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">É de Casa</a>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Sabor e tradição que vêm de casa</h1>
+                <p>A melhor comida caseira da região, feita com amor e os melhores ingredientes.</p>
+                <a href="#cardapio" class="btn">Ver Cardápio</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="container">
+            <h2>Nossa História</h2>
+            <div class="sobre-content">
+                <article>
+                    <h3>História</h3>
+                    <p>Fundado no coração de Guarulhos, o É de Casa nasceu para oferecer pratos que lembram o sabor da comida da vovó.</p>
+                </article>
+                <article>
+                    <h3>Missão</h3>
+                    <p>Nossa missão é servir refeições frescas, com ingredientes selecionados e um atendimento acolhedor.</p>
+                </article>
+                <article>
+                    <h3>Valores</h3>
+                    <p>Acreditamos que a boa comida vai além do prato. Nossos valores são a essência de tudo que fazemos, do preparo à sua mesa: Tradição e Sabor Autêntico, Ingredientes Frescos e Qualidade, Cuidado e Afeto em Cada Detalhe.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="cardapio">
+            <div class="container">
+                <h2>Nosso Cardápio</h2>
+                <div class="cardapio-grid">
+                    <!-- Item 1 -->
+                    <div class="cardapio-item">
+                        <img src="img/feijoada.jpg" alt="Prato de Feijoada">
+                        <h3>Feijoada Completa</h3>
+                        <p>A tradicional feijoada brasileira, servida com arroz, couve, farofa e laranja.</p>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="cardapio-item">
+                        <img src="img/FAROL-file-mignon-a-parmegiana.jpg" alt="Prato de Bife à Parmegiana">
+                        <h3>Bife à Parmegiana</h3>
+                        <p>Suculento bife empanado, coberto com molho de tomate e queijo derretido. Acompanha fritas.</p>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="cardapio-item">
+                        <img src="img/lasanha-classica-com-molho-a-bolonhesa_2829-11251.avif" alt="Pedaço de Lasanha">
+                        <h3>Lasanha à Bolonhesa</h3>
+                        <p>Deliciosa lasanha com massa fresca, molho à bolonhesa e muito queijo.</p>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="cardapio-item">
+                        <img src="img/frango_com_quiabo.jpg" alt="Prato de Frango com Quiabo">
+                        <h3>Frango com Quiabo</h3>
+                        <p>Um clássico da culinária mineira, com frango suculento e quiabo macio, servido com angu.</p>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="cardapio-item">
+                        <img src="img/moqueca_de_peixe.jpg" alt="Prato de Moqueca de Peixe">
+                        <h3>Moqueca de Peixe</h3>
+                        <p>Deliciosa moqueca com peixe fresco, leite de coco, azeite de dendê e pimentões.</p>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="cardapio-item">
+                        <img src="img/strogonnof_de_frango.jpg" alt="Prato de Strogonoff de Frango">
+                        <h3>Strogonoff de Frango</h3>
+                        <p>Cremoso strogonoff de frango com champignon, servido com arroz e batata palha.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="container">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida ou sugestão? Quer fazer uma reserva? Mande uma mensagem!</p>
+            
+            <form id="contact-form">
+                <div id="form-message"></div>
+                <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                <input type="tel" id="telefone" name="telefone" placeholder="Seu Telefone" required>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Restaurante É de Casa</h3>
+                    <p>Rua Endres, 1008 - Bairro Vila Endres</p>
+                    <p>Guarulhos, Sp - CEP 07043-000</p>
+                    <p>Telefone: (11) 2422-5412</p>
+                    <p>E-mail: restauranteedecasa@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes Sociais</h3>
+                    <a href="https://www.facebook.com/people/Restaurante-%C3%89-de-casa/61550549802375/" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/edecasarestaurantes/" target="_blank">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2025 Restaurante é de Casa. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

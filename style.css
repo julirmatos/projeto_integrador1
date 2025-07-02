@@ -1,0 +1,232 @@
+/* --- Configurações Globais e Reset --- */
+:root {
+    --primary-color: #8B4513; /* Marrom (SaddleBrown) */
+    --secondary-color: #F4A460; /* Laranja claro (SandyBrown) */
+    --text-color: #333;
+    --bg-color: #FFF8DC; /* Bege (Cornsilk) */
+    --white-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* --- Header e Navegação --- */
+header {
+    background-color: var(--white-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 25px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Seção Hero --- */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color: var(--white-color);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/predio.jpg') no-repeat center center/cover;
+    padding-top: 70px; /* Para compensar o header fixo */
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #a0522d; /* Variação de marrom */
+}
+
+/* --- Seção Sobre --- */
+.sobre-content {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+/* --- Seção Cardápio --- */
+#cardapio {
+    background-color: var(--white-color);
+}
+
+.cardapio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.cardapio-item {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.cardapio-item:hover {
+    transform: translateY(-5px);
+}
+
+.cardapio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cardapio-item h3 {
+    margin: 15px 0 10px;
+    color: var(--primary-color);
+}
+
+.cardapio-item p {
+    padding: 0 15px;
+}
+
+/* --- Seção Contato --- */
+#contato p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Rodapé --- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-social a {
+    color: var(--white-color);
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.footer-copy {
+    text-align: center;
+    border-top: 1px solid var(--secondary-color);
+    padding-top: 20px;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+    h2 { font-size: 2rem; }
+    .hero-content h1 { font-size: 2.5rem; }
+    header nav { flex-direction: column; height: auto; padding: 15px 0; }
+    header ul { margin-top: 10px; }
+    header ul li { margin: 0 10px; }
+    .sobre-content { flex-direction: column; }
+}
